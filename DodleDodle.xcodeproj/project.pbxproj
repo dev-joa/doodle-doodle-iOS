@@ -10,6 +10,8 @@
 		2F53D1FE3092EDB143EEFAA5 /* Pods_DodleDodleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C238D6B1CAF93F7311754 /* Pods_DodleDodleTests.framework */; };
 		3C43886627B79F6700DB85F1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43886527B79F6700DB85F1 /* Extension.swift */; };
 		3C8E142227B7CDE400AD970F /* lf30_editor_ogwlss9s.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E142127B7CDE400AD970F /* lf30_editor_ogwlss9s.json */; };
+		3C8E143427C0BB5C00AD970F /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E143327C0BB5C00AD970F /* LoginModel.swift */; };
+		3C8E143927C0BBAC00AD970F /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E143827C0BBAC00AD970F /* LoginVM.swift */; };
 		3CE797A327B782A8000BD9D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE797A227B782A8000BD9D5 /* AppDelegate.swift */; };
 		3CE797A527B782A8000BD9D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE797A427B782A8000BD9D5 /* SceneDelegate.swift */; };
 		3CE797A727B782A8000BD9D5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE797A627B782A8000BD9D5 /* LoginVC.swift */; };
@@ -43,6 +45,8 @@
 		31DD2D541D76BDCB072C8F41 /* Pods-DodleDodle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DodleDodle.debug.xcconfig"; path = "Target Support Files/Pods-DodleDodle/Pods-DodleDodle.debug.xcconfig"; sourceTree = "<group>"; };
 		3C43886527B79F6700DB85F1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		3C8E142127B7CDE400AD970F /* lf30_editor_ogwlss9s.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_ogwlss9s.json; sourceTree = "<group>"; };
+		3C8E143327C0BB5C00AD970F /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = DodleDodle/View/LoginModel.swift; sourceTree = SOURCE_ROOT; };
+		3C8E143827C0BBAC00AD970F /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		3CE7979F27B782A8000BD9D5 /* DodleDodle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DodleDodle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE797A227B782A8000BD9D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CE797A427B782A8000BD9D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,9 +102,27 @@
 		3C43886A27B79F6F00DB85F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C8E143327C0BB5C00AD970F /* LoginModel.swift */,
+				3C8E143827C0BBAC00AD970F /* LoginVM.swift */,
 				3CE797A627B782A8000BD9D5 /* LoginVC.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3C8E143127C0BAC300AD970F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C43886527B79F6700DB85F1 /* Extension.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C8E143227C0BADE00AD970F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3C8E142127B7CDE400AD970F /* lf30_editor_ogwlss9s.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		3CE7979627B782A8000BD9D5 = {
@@ -130,8 +152,8 @@
 			children = (
 				3CE797A227B782A8000BD9D5 /* AppDelegate.swift */,
 				3CE797A427B782A8000BD9D5 /* SceneDelegate.swift */,
-				3C43886527B79F6700DB85F1 /* Extension.swift */,
-				3C8E142127B7CDE400AD970F /* lf30_editor_ogwlss9s.json */,
+				3C8E143227C0BADE00AD970F /* Resource */,
+				3C8E143127C0BAC300AD970F /* Model */,
 				3C43886A27B79F6F00DB85F1 /* View */,
 				3CE797A827B782A8000BD9D5 /* Main.storyboard */,
 				3CE797AB27B782B5000BD9D5 /* Assets.xcassets */,
@@ -421,7 +443,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8E143427C0BB5C00AD970F /* LoginModel.swift in Sources */,
 				3CE797A727B782A8000BD9D5 /* LoginVC.swift in Sources */,
+				3C8E143927C0BBAC00AD970F /* LoginVM.swift in Sources */,
 				3CE797A327B782A8000BD9D5 /* AppDelegate.swift in Sources */,
 				3CE797A527B782A8000BD9D5 /* SceneDelegate.swift in Sources */,
 				3C43886627B79F6700DB85F1 /* Extension.swift in Sources */,
