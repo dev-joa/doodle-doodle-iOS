@@ -21,6 +21,11 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       initUI()
+    }
+    
+    // 초기 UI 세팅
+    func initUI() {
         // 로티
         let loginLottieView = AnimationView.init(name: "lf30_editor_ogwlss9s")
         loginLottieView.frame = lottieView.bounds
@@ -59,7 +64,5 @@ class LoginVC: UIViewController {
         signUpBtn.layer.borderWidth = 1
         signUpBtn.layer.borderColor = UIColor(red: 222/255.0, green: 222/255.0, blue: 222/255.0, alpha: 1).cgColor
     }
-    
-    
 }
 
